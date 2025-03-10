@@ -1,0 +1,30 @@
+.button-details {
+  font-size: $font-size-text-medium;
+  line-height: $line-height-huge;
+  font-weight: $font-weight-medium;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: $color-text-primary;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &__box {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-image: url('../icons/expand.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__text {
+    padding-left: 23px;
+  }
+}

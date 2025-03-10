@@ -1,0 +1,83 @@
+$shark: #1b1c21;
+$alabaster: #f8f8f8;
+$white: #ffffff;
+$jumbo: #7e7e82;
+$radical-red: #ff3e79;
+$gallery: #eaeaea;
+$bright-turquoise: #41f6d7;
+$frosted-mint: #d9fff5;
+$bombay: #b5b6bc;
+$alto: #dddddd;
+$brick-red: #cf3160;
+
+$color-background: $alabaster;
+$color-background-light: $white;
+$color-text-primary: $shark;
+$color-text-secondary: $jumbo;
+$color-text-third: $bombay;
+$color-button: $radical-red;
+$color-additional: $bright-turquoise;
+$color-border: $gallery;
+$color-line: $frosted-mint;
+$color-text-button: $white;
+$color-bullet: $alto;
+$color-button-hover: $brick-red;
+
+$font-path: './../fonts';
+$font-family: 'TT Lakes, sans-serif';
+
+$font-size-text-xlarge: 28px;
+$font-size-text-large: 24px;
+$font-size-text-medium: 16px;
+$font-size-text-normal: 14px;
+$font-size-text-small: 12px;
+
+$line-height-huge: 150%;
+$line-height-large: 143%;
+$line-height-medium: 133%;
+$line-height-normal: 129%;
+$line-height-small: 114%;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-family-regular: 'TTLakes-Regular';
+$font-family-medium: 'TTLakes-Medium';
+$font-family-bold: 'TTLakes-Bold';
+
+$letter-spacing-primary: -0.2px;
+$letter-spacing-secondary: 0.2px;
+
+$padding-mobile: 0 16px;
+$padding-tablet: 0 24px;
+$padding-laptop: 0 32px;
+
+$width-item-tablet: calc(100% / 3 - 24px);
+$width-item-desktop: calc(25% - 24px);
+
+$width-menu: 320px;
+$width-modal: 440px;
+$size-bullet: 12px;
+
+$window-width-big-mobile: 440px;
+$window-width-tablet: 768px;
+$window-width-desktop: 1024px;
+$window-width-laptop: 1440px;
+
+$screen-small: '(min-width: #{$window-width-big-mobile})';
+$screen-medium: '(min-width: #{$window-width-tablet})';
+$screen-large: '(min-width: #{$window-width-desktop})';
+$screen-xlarge: '(min-width: #{$window-width-laptop})';
+
+$radius-button: 16px;
+$radius-primary: 6px;
+
+$box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+  16px 0px 52px rgba(14, 24, 80, 0.2);
+
+$z-index-menu: 10;
+$z-index-overlay: 9;
+$z-index-menu-hide: 8;
+
+$transition: opacity 0.6s, transform 0.6s, visibility 0.6s;

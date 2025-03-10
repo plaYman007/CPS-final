@@ -1,0 +1,109 @@
+.repair {
+  &__item {
+    min-width: 224px;
+    height: 160px;
+    background: $color-background-light;
+    border: 1px solid $color-border;
+    border-radius: $radius-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  &__link {
+    align-self: flex-end;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-size-text-medium;
+    line-height: $line-height-huge;
+    letter-spacing: $letter-spacing-primary;
+    color: $color-text-primary;
+    font-weight: $font-weight-medium;
+  }
+
+  &__button-details {
+    margin-top: 24px;
+    display: none;
+  }
+
+  @media screen and #{$screen-medium} {
+    &__button-details {
+      display: block;
+      padding: $padding-tablet;
+    }
+
+    &__swiper {
+      .swiper-wrapper::after {
+        content: '';
+        width: $width-item-tablet;
+      }
+
+      .swiper-slide {
+        flex-basis: $width-item-tablet;
+        max-width: $width-item-tablet;
+
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      height: 160px;
+      overflow: hidden;
+      padding: 0 8px;
+
+      &--open {
+        overflow: visible;
+        height: 100%;
+
+        .swiper-slide:nth-child(n + 4) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and #{$screen-large} {
+    &__swiper {
+      .swiper-wrapper::after {
+        content: '';
+        width: $width-item-desktop;
+      }
+
+      .swiper-slide {
+        flex-basis: $width-item-desktop;
+        max-width: $width-item-desktop;
+
+        &:nth-child(n + 4) {
+          display: block;
+        }
+
+        &:nth-child(n + 5) {
+          display: none;
+        }
+      }
+    }
+    &__content {
+      &--open {
+        .swiper-slide:nth-child(n + 5) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    &__button-details {
+      padding: $padding-laptop;
+    }
+
+    &__content {
+      padding: 0 20px;
+    }
+  }
+}

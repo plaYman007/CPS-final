@@ -1,0 +1,91 @@
+.sidenav {
+  width: $width-menu;
+  height: 100%;
+  padding: 19px 0 32px;
+  background: $color-background-light;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: $z-index-menu;
+  top: 0;
+  left: 0;
+  transform: translateX(-400px);
+  overflow-x: hidden;
+  transition: opacity 0.6s, transform 0.6s, visibility 0.6s;
+  visibility: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: $padding-mobile;
+  }
+
+  &__burger {
+    margin-right: 17px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    margin-top: 23px;
+  }
+
+  &__email {
+    margin-bottom: 12px;
+
+    a {
+      font-size: $font-size-text-medium;
+      line-height: $line-height-huge;
+      letter-spacing: $letter-spacing-primary;
+      color: $color-text-primary;
+      text-decoration: none;
+      font-weight: $font-weight-medium;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__tel {
+    a {
+      font-size: $font-size-text-large;
+      line-height: $line-height-medium;
+      letter-spacing: -0.6px;
+      color: $color-text-primary;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+    }
+  }
+
+  &__contact {
+    margin-top: auto;
+    margin-bottom: 8px;
+    padding: $padding-mobile;
+  }
+
+  &__icon-bar {
+    margin-bottom: 16px;
+  }
+
+  &--open {
+    transform: translateX(0px);
+    box-shadow: $box-shadow;
+    visibility: visible;
+    transition-property: transform;
+  }
+
+  @media screen and #{$screen-xlarge} {
+    & {
+      left: 400px;
+      z-index: $z-index-menu-hide;
+      visibility: visible;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+}

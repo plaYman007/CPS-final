@@ -1,0 +1,47 @@
+.swiper {
+  padding-bottom: 40px;
+
+  & .swiper-wrapper {
+    margin: 0 16px;
+  }
+
+  & .swiper-slide {
+    width: auto;
+  }
+
+  & .swiper-pagination {
+    position: absolute;
+  }
+
+  & .swiper-pagination-bullet {
+    width: $size-bullet;
+    height: $size-bullet;
+    background: $color-bullet;
+    margin-right: 12px;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background: $color-text-third;
+  }
+
+  @media screen and #{$screen-medium} {
+    & {
+      padding-bottom: 0;
+    }
+
+    & .swiper-wrapper {
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    & .swiper-slide {
+      width: auto;
+      flex-grow: 1;
+      margin: 0 12px 16px;
+    }
+
+    & .swiper-pagination {
+      display: none;
+    }
+  }
+}

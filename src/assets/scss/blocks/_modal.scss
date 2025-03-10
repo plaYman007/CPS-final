@@ -1,0 +1,146 @@
+.modal {
+  max-width: $width-modal;
+  height: 100%;
+  background: $color-background-light;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  transform: translateX(550px);
+  transition: $transition;
+  visibility: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+  &__burger {
+    padding: 24px 16px 40px;
+  }
+
+  &__title {
+    font-size: $font-size-text-large;
+    line-height: $line-height-medium;
+    letter-spacing: -0.6px;
+    color: $color-text-primary;
+    margin: 0;
+  }
+
+  &__header {
+    margin-bottom: 24px;
+    position: relative;
+    padding: 0 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background: $color-additional;
+      border-radius: 2px;
+      width: 4px;
+      height: 40px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  &__input {
+    font-family: $font-family;
+    background: $color-background-light;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 16px;
+
+    &::placeholder {
+      font-family: $font-family;
+      font-size: $font-size-text-medium;
+      line-height: $line-height-huge;
+      letter-spacing: $letter-spacing-primary;
+      color: $color-text-third;
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    font-family: $font-family;
+    background: $color-background-light;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 16px;
+    resize: none;
+    height: 118px;
+
+    &::placeholder {
+      font-family: $font-family;
+      font-size: $font-size-text-medium;
+      line-height: $line-height-huge;
+      letter-spacing: $letter-spacing-primary;
+      color: $color-text-third;
+      outline: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-button;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-text-normal;
+    line-height: $line-height-small;
+    color: $color-text-secondary;
+    margin: 0 0 18px;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &--open {
+    transform: translateX(0px);
+    box-shadow: $box-shadow;
+    visibility: visible;
+    transition-property: transform;
+  }
+
+  @media screen and #{$screen-small} {
+    & {
+      border-left: 1px solid $color-line;
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    &__burger {
+      position: absolute;
+      top: 37px;
+      left: -70px;
+      padding: 0;
+    }
+
+    &__header {
+      padding: 40px 32px 0;
+
+      &::before {
+        transform: none;
+      }
+    }
+
+    &__form {
+      padding: 0 32px;
+    }
+  }
+}

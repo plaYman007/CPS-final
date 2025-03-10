@@ -1,0 +1,92 @@
+.page {
+  background: $color-background;
+  padding: 24px 0 35px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 4px;
+      background: $color-additional;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-text-xlarge;
+    line-height: $line-height-large;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.6px;
+    margin: 0;
+    padding: $padding-mobile;
+  }
+
+  &__icon-bar {
+    display: none;
+  }
+
+  &__slide-menu {
+    margin: 24px 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 24px;
+      height: 40px;
+      background: linear-gradient(
+        270deg,
+        $color-background 16.84%,
+        rgba(248, 248, 248, 0) 100%
+      );
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__about-us {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-mobile;
+  }
+
+  @media screen and #{$screen-medium} {
+    &__slide-menu {
+      margin: 32px 0;
+    }
+
+    &__about-us {
+      flex-direction: row;
+      padding: $padding-tablet;
+    }
+
+    &__title {
+      padding: $padding-tablet;
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    &__icon-bar {
+      display: flex;
+      padding: $padding-laptop;
+    }
+
+    &__container {
+      margin-left: $width-menu;
+    }
+
+    &__about-us {
+      padding: $padding-laptop;
+    }
+
+    &__title {
+      padding: $padding-laptop;
+    }
+  }
+}

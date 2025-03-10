@@ -1,0 +1,33 @@
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: filter 0.6s;
+
+  &--call {
+    background-image: url('./../icons/call.svg');
+  }
+
+  &--chat {
+    background-image: url('./../icons/chat.svg');
+  }
+
+  &--profile {
+    background-image: url('./../icons/profile.svg');
+  }
+
+  &--repair {
+    background-image: url('./../icons/repair.svg');
+  }
+
+  &--checkstatus {
+    background-image: url('./../icons/checkstatus.svg');
+  }
+
+  &--search {
+    background-image: url('./../icons/search.svg');
+  }
+}

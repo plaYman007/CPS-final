@@ -1,0 +1,10 @@
+.logo {
+  width: 98px;
+  height: 52px;
+  background: url('../icons/logo.svg') no-repeat;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}

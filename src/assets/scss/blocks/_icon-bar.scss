@@ -1,0 +1,51 @@
+.icon-bar {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &--helper::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 32px;
+      background-color: $color-border;
+      border-radius: 1px;
+      margin: 0 20px;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 16px;
+    list-style: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and #{$screen-medium} {
+    &__list {
+      &--hidden {
+        display: flex;
+      }
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    &__list {
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+}

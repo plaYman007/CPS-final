@@ -1,0 +1,26 @@
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url('#{$font-path}/#{$font-family-regular}.woff') format('woff'),
+    url('#{$font-path}/#{$font-family-regular}.ttf') format('truetype'),
+    url('#{$font-path}/#{$font-family-regular}.eot') format('eot');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  src: url('#{$font-path}/#{$font-family-medium}.woff') format('woff'),
+    url('#{$font-path}/#{$font-family-medium}.ttf') format('ttf'),
+    url('#{$font-path}/#{$font-family-medium}.eot') format('eot');
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url('#{$font-path}/#{$font-family-bold}.woff') format('woff'),
+    url('#{$font-path}/#{$font-family-bold}.ttf') format('ttf'),
+    url('#{$font-path}/#{$font-family-bold}.eot') format('eot');
+}

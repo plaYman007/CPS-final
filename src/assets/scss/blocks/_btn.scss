@@ -1,0 +1,36 @@
+.btn {
+  background: $color-button;
+  border-radius: $radius-button;
+  font-size: $font-size-text-small;
+  line-height: 196%;
+  letter-spacing: $letter-spacing-primary;
+  text-transform: uppercase;
+  color: $color-text-button;
+  font-weight: $font-weight-bold;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background 0.7s;
+
+  &:hover {
+    background: $color-button-hover;
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+      transform: rotate(45deg);
+      height: 6px;
+      width: 6px;
+      border-top: 2px solid $color-text-button;
+      border-right: 2px solid $color-text-button;
+      background: transparent;
+      transform-origin: 3px 3px;
+      transition: border 0.6s;
+      margin-left: 15px;
+    }
+  }
+}

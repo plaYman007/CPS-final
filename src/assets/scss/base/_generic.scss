@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  margin: 0;
+  height: 100%;
+  color: $color-text-primary;
+  letter-spacing: $letter-spacing-primary;
+}

@@ -1,0 +1,27 @@
+.lang {
+  padding: $padding-mobile;
+
+  &__item {
+    font-size: $font-size-text-medium;
+    line-height: $line-height-huge;
+    letter-spacing: $letter-spacing-primary;
+    color: $color-text-primary;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 7px;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      color: $color-text-secondary;
+    }
+  }
+}

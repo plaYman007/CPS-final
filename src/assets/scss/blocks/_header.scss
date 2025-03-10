@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1px solid $frosted-mint;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 88px;
+    padding: $padding-mobile;
+  }
+
+  &__burger {
+    margin-right: 16px;
+  }
+
+  &__icon-bar {
+    margin-left: auto;
+  }
+
+  @media screen and #{$screen-medium} {
+    &__container {
+      padding: $padding-tablet;
+    }
+
+    &__burger {
+      margin-right: 43px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 32px;
+        background: $color-border;
+        border-radius: 1px;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    & {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.feature {
+  margin: 24px 0;
+
+  &__header {
+    padding: 16px;
+    background: linear-gradient(
+      90deg,
+      $color-background 0%,
+      $color-background-light 98.61%
+    );
+    border-top: 1px solid $color-line;
+  }
+
+  &__title {
+    font-size: $font-size-text-medium;
+    line-height: $line-height-huge;
+    font-weight: $font-weight-regular;
+    text-transform: uppercase;
+    color: $color-text-secondary;
+    margin: 0;
+  }
+
+  &__content {
+    margin-top: 16px;
+  }
+
+  @media screen and #{$screen-medium} {
+    &__header {
+      padding: 16px 24px;
+    }
+
+    &__content {
+      margin-top: 24px;
+    }
+  }
+
+  @media screen and #{$screen-xlarge} {
+    &__header {
+      padding: 16px 32px;
+    }
+  }
+}

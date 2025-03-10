@@ -1,0 +1,64 @@
+{
+  "name": "cps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "autoprefixer": "9.6.1",
+    "babel-loader": "8.0.6",
+    "copy-webpack-plugin": "5.1.0",
+    "css-loader": "3.2.0",
+    "file-loader": "4.2.0",
+    "gh-pages": "2.1.1",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.2.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "^3.11.0",
+    "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "postcss-preset-env": "^7.0.1",
+    "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^7.3.0"
+  }
+}
